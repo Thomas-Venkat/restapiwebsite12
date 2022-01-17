@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+    <h1>The Lord of the Rings Books</h1>
+{% for datas in data %}
+    <span>{{ datas['_id'] }}</span>
+{% endfor %}
+    <p>{{ data['name'] }}</p>
+</div>
+{% endblock content %}
